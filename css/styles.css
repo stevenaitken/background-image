@@ -1,0 +1,39 @@
+        /* Remove default spacing */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HERO HEADER */
+        header {
+            height: 80vh; /* 80% of the screen height */
+            background-image: url("../images/siguniang-mountain.jpg"); /* Path to your hero image */
+            background-size: cover;        /* Makes image cover full area */
+            background-position: center;   /* Centers the image */
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        /* Overlay effect (optional but professional looking) */
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            position: relative; /* Keeps text above overlay */
+            font-size: 3rem;
+            z-index: 1;
+        }
+
+        /* Main content */
+        main {
+            padding: 40px;
+        }
